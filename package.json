@@ -2,12 +2,15 @@
   "name": "event-management",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://hifsa69.github.io/Event-Management",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d dist",
   },
   "dependencies": {
     "@tsparticles/react": "^4.3.1",
