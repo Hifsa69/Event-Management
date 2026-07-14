@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 70px;
-  padding: 120px 8% 80px;
+  padding: 70px 8% 100px;
   color: white;
 }
 
@@ -170,15 +170,15 @@
 
 /* ================= RIGHT ================= */
 
-.hero-image {
-  flex: 1;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
+.hero-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    transform: translateY(-100px);
 }
+
 
 /* Glow Behind Image */
 
