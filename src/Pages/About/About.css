@@ -1,0 +1,267 @@
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+padding:90px 8%;
+
+}
+
+.about-header{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.about-header h1{
+
+font-size:48px;
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.about-header p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#CBD5E1;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.about-cards{
+
+margin-top:60px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.about-card{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-start;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:22px;
+
+padding:35px;
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.20);
+
+}
+
+.about-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#60A5FA;
+
+box-shadow:
+0 0 22px rgba(59,130,246,.30),
+0 15px 35px rgba(0,0,0,.30);
+
+}
+
+.about-icon{
+
+font-size:52px;
+
+color:#60A5FA;
+
+margin-bottom:20px;
+
+}
+
+.about-card h3{
+
+font-size:24px;
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+.about-card p{
+
+color:#CBD5E1;
+
+line-height:1.8;
+
+font-size:16px;
+
+}
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media(max-width:992px){
+
+.about{
+
+padding:80px 6%;
+
+}
+
+.about-header h1{
+
+font-size:42px;
+
+}
+
+.about-cards{
+
+gap:25px;
+
+}
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:768px){
+
+.about{
+
+padding:70px 25px;
+
+}
+
+.about-header h1{
+
+font-size:34px;
+
+}
+
+.about-header p{
+
+font-size:16px;
+
+}
+
+.about-cards{
+
+grid-template-columns:1fr;
+
+}
+
+.about-card{
+
+max-width:500px;
+
+margin:auto;
+
+padding:30px;
+
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:576px){
+
+.about{
+
+padding:60px 20px;
+
+}
+
+.about-header h1{
+
+font-size:30px;
+
+}
+
+.about-header p{
+
+font-size:15px;
+
+}
+
+.about-card{
+
+padding:25px 20px;
+
+}
+
+.about-icon{
+
+font-size:44px;
+
+}
+
+.about-card h3{
+
+font-size:22px;
+
+}
+
+.about-card p{
+
+font-size:15px;
+
+}
+
+}
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media(max-width:400px){
+
+.about-header h1{
+
+font-size:26px;
+
+}
+
+.about-icon{
+
+font-size:40px;
+
+}
+
+.about-card{
+
+padding:22px 18px;
+
+}
+
+}

@@ -1,0 +1,211 @@
+.footer{
+
+margin-top:100px;
+
+padding:70px 8% 25px;
+
+background:rgba(255,255,255,.04);
+
+backdrop-filter:blur(18px);
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:50px;
+
+}
+
+/* Heading */
+
+.footer-section h2{
+
+font-size:34px;
+
+color:#60A5FA;
+
+margin-bottom:18px;
+
+}
+
+.footer-section h3{
+
+font-size:22px;
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+/* Text */
+
+.footer-section p{
+
+color:#CBD5E1;
+
+line-height:1.8;
+
+font-size:15px;
+
+margin-bottom:10px;
+
+}
+
+/* Links */
+
+.footer-section ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-section li{
+
+margin-bottom:12px;
+
+}
+
+.footer-section a{
+
+text-decoration:none;
+
+color:#CBD5E1;
+
+transition:.3s;
+
+}
+
+.footer-section a:hover{
+
+color:#60A5FA;
+
+padding-left:6px;
+
+}
+
+/* Social Icons */
+
+.social-icons{
+
+display:flex;
+
+gap:15px;
+
+margin-top:18px;
+
+}
+
+.social-icons a{
+
+width:46px;
+
+height:46px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.08);
+
+color:white;
+
+font-size:18px;
+
+transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+background:#3B82F6;
+
+transform:translateY(-6px);
+
+box-shadow:0 0 20px rgba(59,130,246,.45);
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+margin-top:55px;
+
+padding-top:25px;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+color:#94A3B8;
+
+font-size:15px;
+
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+text-align:center;
+
+padding:60px 25px 25px;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.footer-section h2{
+
+font-size:30px;
+
+}
+
+.footer-section h3{
+
+font-size:20px;
+
+}
+
+}

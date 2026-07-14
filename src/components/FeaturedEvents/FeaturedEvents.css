@@ -1,0 +1,127 @@
+.featured{
+
+padding:90px 8%;
+
+}
+
+.featured h2{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:700;
+
+color:#fff;
+
+margin-bottom:55px;
+
+}
+
+/* Cards */
+
+.featured-grid{
+
+display:flex;
+
+justify-content:center;
+
+align-items:stretch;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+}
+
+/* ==========================
+   Large Laptop
+========================== */
+
+@media (max-width:1200px){
+
+.featured{
+
+padding:80px 6%;
+
+}
+
+.featured-grid{
+
+gap:25px;
+
+}
+
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media (max-width:992px){
+
+.featured h2{
+
+font-size:42px;
+
+}
+
+.featured-grid{
+
+gap:22px;
+
+}
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:768px){
+
+.featured{
+
+padding:70px 25px;
+
+}
+
+.featured h2{
+
+font-size:36px;
+
+margin-bottom:40px;
+
+}
+
+.featured-grid{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:25px;
+
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:576px){
+
+.featured{
+
+padding:60px 20px;
+
+}
+
+.featured h2{
+
+font-size:30px;
+
+}
+
+}

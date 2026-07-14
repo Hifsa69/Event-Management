@@ -1,0 +1,247 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    position: sticky;
+    top: 20px;
+
+    width: 92%;
+
+    margin: auto;
+    margin-top: 20px;
+
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,.07);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.35);
+
+    z-index: 999;
+}
+
+/* ================= Logo ================= */
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+/* ================= Links ================= */
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+/* Hover */
+
+.nav-links a:hover{
+
+    color:#60A5FA;
+
+}
+
+/* Underline */
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:0;
+
+height:2px;
+
+background:#60A5FA;
+
+transition:.35s;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+/* Active Link */
+
+.nav-links a.active{
+
+color:#60A5FA;
+
+}
+
+.nav-links a.active::after{
+
+width:100%;
+
+}
+
+/* ================= Button ================= */
+
+.nav-btn{
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:10px;
+
+background:linear-gradient(
+135deg,
+#2563EB,
+#7C3AED);
+
+color:white;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.nav-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 25px rgba(59,130,246,.45);
+
+}
+
+/* ================= Menu Icon ================= */
+
+.menu-icon{
+
+display:none;
+
+font-size:28px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:18px 22px;
+
+flex-wrap:wrap;
+
+}
+
+.menu-icon{
+
+display:block;
+
+}
+
+.nav-btn{
+
+display:none;
+
+}
+
+.nav-links{
+
+display:none;
+
+width:100%;
+
+margin-top:20px;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:22px;
+
+padding:25px;
+
+border-radius:15px;
+
+background:rgba(17,25,40,.95);
+
+backdrop-filter:blur(18px);
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+animation:menuSlide .35s ease;
+
+}
+
+}
+
+/* ================= Animation ================= */
+
+@keyframes menuSlide{
+
+from{
+
+opacity:0;
+
+transform:translateY(-20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
